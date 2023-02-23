@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Русский для жизни</title>
+    <link>/</link>
+    <description>Recent content on Русский для жизни</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Коммуникативная ситуация.</title>
+      <link>/module1/1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/module1/1/</guid>
+      <description>Реализуя коммуникативную функцию (функцию общения), язык позволяет нам обрести своё место в социуме: находить друзей, оказывать влияние на людей. Быть частью коллектива.
+Пообщаемся на тему общения.
+Речь человека всегда привязана к определённым обстоятельствам. Здесь всё важно: кто и с кем разговаривает, когда, в каком месте. Совокупность этих обстоятельств называется коммуникативной ситуацией. Слово «коммуникация» может испугать, но значение у него простое – общение.
+! осторожно: термин !
+Коммуникативная ситуация – общее описание участников и темы общения, а также и обстоятельств, в которых оно происходит.</description>
+    </item>
+    
+    <item>
+      <title>Культура речи.</title>
+      <link>/module1/2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/module1/2/</guid>
+      <description>Культура речи. </description>
+    </item>
+    
+    <item>
+      <title>Функциональные стили речи.</title>
+      <link>/module1/3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/module1/3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Устная и письменная речь.</title>
+      <link>/module1/4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/module1/4/</guid>
+      <description>Устная и письменная речь. </description>
+    </item>
+    
+    <item>
+      <title>Монолог и диалог.</title>
+      <link>/module1/5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/module1/5/</guid>
+      <description>Монолог и диалог. </description>
+    </item>
+    
+    <item>
+      <title>Публичное выступление.</title>
+      <link>/module1/6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/module1/6/</guid>
+      <description>Публичное выступление. </description>
+    </item>
+    
+    <item>
+      <title>Правила эффэктивного диалога.</title>
+      <link>/module1/7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/module1/7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/module2/1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/module2/1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/module3/1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/module3/1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
