@@ -1,0 +1,20 @@
+baseURL: ""
+languageCode: en-us
+title: Русский для жизни
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  cover:
+    linkFullImages: true
+  
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+
+  homeInfoParams:
+    Title: "Русский язык. Практическое пособие."
+    Content: ""
+
