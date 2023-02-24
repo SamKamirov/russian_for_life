@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Что-то on Русский для жизни</title>
-    <link>/russian_for_life/module3/</link>
+    <link>https://samkamirov.github.io./russian_for_life/module3/</link>
     <description>Recent content in Что-то on Русский для жизни</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/russian_for_life/module3/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://samkamirov.github.io./russian_for_life/module3/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>/russian_for_life/module3/1/</link>
+      <link>https://samkamirov.github.io./russian_for_life/module3/1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/russian_for_life/module3/1/</guid>
+      <guid>https://samkamirov.github.io./russian_for_life/module3/1/</guid>
       <description></description>
     </item>
     

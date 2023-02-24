@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Русский для жизни</title>
-    <link>/russian_for_life/categories/</link>
+    <link>https://samkamirov.github.io./russian_for_life/categories/</link>
     <description>Recent content in Categories on Русский для жизни</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/russian_for_life/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://samkamirov.github.io./russian_for_life/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
