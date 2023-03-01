@@ -36,5 +36,7 @@
 }
 
 .item__header {
+    font-size:18pt;
+    font-weight: 500;
     padding: 10px 5px;
 }

@@ -21,11 +21,14 @@
 }
 
 .post__title {
+    font-size: 18pt;
     margin: 10px 0;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .post-single__text {
+    font-size: 14pt; 
+    font-weight: 400;
     margin: 0 auto;
     color: #000;
     line-height: 1.5;
