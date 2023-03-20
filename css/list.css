@@ -33,6 +33,7 @@
 
 .item__image {
     border-radius: var(--radius) var(--radius) 0 0;
+    width: 100%;
 }
 
 .item__header {

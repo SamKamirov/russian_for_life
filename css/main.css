@@ -12,7 +12,11 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 14pt; 
+    font-weight: 400;
+    color: #000;
+    line-height: 1.5;
     margin: 0;
     padding: 0;
 }
@@ -30,7 +34,7 @@ body {
 
 p {
     padding: 0;
-    margin: 0;
+    margin: 10px 0;
 }
 
 .main {
