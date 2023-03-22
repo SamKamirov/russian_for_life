@@ -20,21 +20,22 @@
 }
 
 .post__title {
-    font-size: 18pt;
+    font-size: 22pt;
     margin: 10px 0;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .post-single__header {
     font-size: 20pt;
-    font-weight: 600;
-    margin: 10px 0;
+    font-weight: 500;
+    padding: 10px 10px;
 }
 
 .post-single__sub_header {
     font-size: 18pt;
     font-weight: 500;
     margin-top: 20px;
+    padding: 0 10px;
 }
 
 .post-single__text {
@@ -43,15 +44,18 @@
     margin: 10px 0;
     color: #000;
     line-height: 1.5;
+    padding: 0 10px;
 }
 
 .post-single__main-rubric {
-    color: #3858e9;
+    color: #fff;
+    background-color: #3858e9;
 }
 
 .post-single__term {
     font-style: italic;
     font-weight: 600;
+    padding: 0 10px;
 }
 
 table {
@@ -60,31 +64,51 @@ table {
 }
 
 .post-single__list {
-    margin: 0 20px;
-    list-style-type: "– ";
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+.post-single__list > li {
+    margin-left: 15px;
 }
 
 .post-buttons {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    min-width: 20em;
-    max-width: 40em;
+    flex-direction: row-reverse;
+    max-width: 45em;
     padding: 0;
 }
 
 .post-previous,
 .post-next {
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin: 5px;
+    max-width: 50%;
     background-color: #3858e9;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.post-buttons__wrapper {
+    margin: 10px;
+}
+
+.post-buttons__next,
+.post-buttons__previous {
+    margin: 0;
+    color: #fff;
+}
+
+.post-buttons__title {
+    margin: 0;
+    font-size:2vh;
     color: #fff;
 }
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
-    .post-buttons {
-        margin-bottom: 10px;
-    }
-
     .post-previous, 
     .post-next {
         font-size: 12pt;
