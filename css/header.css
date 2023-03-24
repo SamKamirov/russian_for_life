@@ -11,6 +11,7 @@
 .logo {
     position: relative;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 20pt;
+    font-weight: 500;
 }

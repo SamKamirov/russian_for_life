@@ -8,20 +8,19 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-bottom: var(--gap);
     max-width: 45em;
-    border-radius: var(--radius);
-    border: 1px solid var(--border);
 }
 
 .post-single__image {
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 15px;
     min-width: 20em;
 }
 
 .post__title {
     font-size: 22pt;
     margin: 10px 0;
+    padding: 0 10px;
     font-weight: 600;
 }
 
@@ -104,13 +103,12 @@ table {
 
 .post-buttons__title {
     margin: 0;
-    font-size:2vh;
+    font-size:12pt;
     color: #fff;
 }
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
-    .post-previous, 
-    .post-next {
-        font-size: 12pt;
+    .post-single__image {
+        padding: 10px;
     }
 }
