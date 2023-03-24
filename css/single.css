@@ -13,21 +13,21 @@
 
 .post-single__image {
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 20px;
     min-width: 20em;
 }
 
 .post__title {
     font-size: 22pt;
     margin: 10px 0;
-    padding: 0 10px;
+    padding: 0 15px;
     font-weight: 600;
 }
 
 .post-single__header {
     font-size: 20pt;
     font-weight: 500;
-    padding: 10px 10px;
+    padding: 10px 15px;
 }
 
 .post-single__sub_header {
@@ -43,7 +43,7 @@
     margin: 10px 0;
     color: #000;
     line-height: 1.5;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 .post-single__main-rubric {
@@ -54,7 +54,7 @@
 .post-single__term {
     font-style: italic;
     font-weight: 600;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 table {
@@ -63,7 +63,7 @@ table {
 }
 
 .post-single__list {
-    padding: 0 10px;
+    padding: 0 15px;
     margin: 0 5px;
 }
 
@@ -109,6 +109,6 @@ table {
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
     .post-single__image {
-        padding: 10px;
+        padding: 15px;
     }
 }
