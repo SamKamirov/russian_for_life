@@ -5,7 +5,31 @@
 }
 
 .header {
-    background-color: rgba(255, 255, 255);
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mode-toggle {
+    padding: 20px 15px;
+    margin: 0 15px;
+    border: none;
+}
+
+.dark {
+    background: url(../images/moon-phase-black-crescent-shape_icon-icons.com_72982.svg) center no-repeat;
+}
+
+.light {
+    background: url(../images/iconfinder-idea-4341295_120562.svg) center no-repeat;
+}
+
+.dark-mode .logo {
+    color:#fff;
+}
+
+.dark-mode .header {
+    background-color: #000;
 }
 
 .logo {

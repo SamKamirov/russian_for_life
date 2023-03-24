@@ -8,6 +8,7 @@
     --entry: rgb(255, 255, 255);
     --radius: 10px;
     --border: rgb(238, 238, 238);
+    --dark-mode-color: #474a50;
 }
 
 * {

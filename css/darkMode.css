@@ -1,0 +1,32 @@
+.dark-mode {
+    background-color: var(--dark-mode-color);
+    color: #fff;
+}
+
+.dark-mode .main {
+    background-color: var(--dark-mode-color);
+}
+
+.dark-mode .main .post-single .post-single__text,
+.post-single__header,
+.post-single__sub_header,
+.post-single{
+    color: #fff;
+}
+
+.dark-mode .main .post-single .post-single__list li{
+    color: #fe6e6e;
+}
+
+.dark-mode .main .post-single .post-single__text b {
+    color: #fe6e6e;
+}
+
+.dark-mode .main .post-single .post-single__term {
+    /* color: #ffce84; */
+    color: #fe6e6e;
+}
+
+.dark-mode .main .post-single .post-single__title {
+    color: #fff;
+}
