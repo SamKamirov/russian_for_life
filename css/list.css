@@ -4,14 +4,13 @@
     justify-content: center;
     max-width: 1000px;
     /* flex-direction: column; */
-    margin: auto;
+    margin-top: 60px;
 }
 
 .item__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
     min-width: 15em;
     min-height: 10em;
     max-height: 25em;
