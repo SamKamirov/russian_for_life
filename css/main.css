@@ -31,6 +31,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgba(240, 240, 240, 0.875);
+    height: 100vh;
 }
 
 p {
@@ -43,7 +44,6 @@ b {
 }
 
 .main {
-    position: relative;
     min-height: calc(100vh - var(--header-height) - var(--footer-height));
     max-width: var(--main-width) + var(--gap);
     margin: auto;

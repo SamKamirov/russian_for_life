@@ -37,7 +37,13 @@
 }
 
 .item__header {
-    font-size:3.5vh;
+    font-size: 2vmax;
     font-weight: 500;
     padding: 10px 5px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .item__header {
+        font-size: 3vmax;
+    }
 }

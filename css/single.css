@@ -7,8 +7,8 @@
 .post-single {
     display: flex;
     flex-direction: column;
-    position: relative;
     max-width: 45em;
+    margin-top:60px;
 }
 
 .post-single__image {
@@ -25,16 +25,16 @@
 }
 
 .post-single__header {
-    font-size: 20pt;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 700;
     padding: 10px 15px;
 }
 
 .post-single__sub_header {
-    font-size: 18pt;
+    font-size: 20px;
     font-weight: 500;
     margin-top: 20px;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 .post-single__text {
@@ -49,17 +49,13 @@
 .post-single__main-rubric {
     color: #fff;
     background-color: #3858e9;
+    margin: 0 10px;
 }
 
 .post-single__term {
     font-style: italic;
     font-weight: 600;
     padding: 0 15px;
-}
-
-table {
-    width: 100%;
-    border: 1px solid black;
 }
 
 .post-single__list {
@@ -71,44 +67,40 @@ table {
     margin-left: 15px;
 }
 
-.post-buttons {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-    max-width: 45em;
-    padding: 0;
-}
-
-.post-previous,
-.post-next {
-    display: flex;
-    align-items: center;
-    flex: 1;
-    margin: 5px;
-    max-width: 50%;
-    background-color: #3858e9;
-    color: #fff;
-    border-radius: 10px;
-}
-
-.post-buttons__wrapper {
-    margin: 10px;
-}
-
-.post-buttons__next,
-.post-buttons__previous {
-    margin: 0;
-    color: #fff;
-}
-
-.post-buttons__title {
-    margin: 0;
-    font-size:12pt;
-    color: #fff;
-}
-
 @media screen and (min-width: 300px) and (max-width: 768px) {
     .post-single__image {
         padding: 15px;
+    }
+
+    .post-single__text {
+        font-size: 14px;
+    }
+
+    .post-single__header {
+        font-size: 24px;
+    }
+
+    .post-single__sub_header {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .post-single__text {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .post-single__header {
+        font-size: 28px;
+    }
+
+    .post-single__sub_header {
+        font-size: 24px;
+    }
+
+    .post-single__text {
+        font-size: 18px;
     }
 }

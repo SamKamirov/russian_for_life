@@ -4,14 +4,23 @@
     } */
 }
 
-.header {
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+}
+
+.header-wrapper {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
+    align-self: center;
+    height: 60px;
 }
 
 .mode-toggle {
-    padding: 20px 15px;
+    padding: 20px;
     margin: 0 15px;
     border: none;
 }
@@ -21,15 +30,8 @@
 }
 
 .light {
-    background: url(../images/iconfinder-idea-4341295_120562.svg) center no-repeat;
-}
-
-.dark-mode .logo {
-    color:#fff;
-}
-
-.dark-mode .header {
-    background-color: #000;
+    /* background: url(../images/iconfinder-idea-4341295_120562.svg) center no-repeat; */
+    background: url(../images/icons8-солнце-50.svg) center no-repeat;
 }
 
 .logo {
