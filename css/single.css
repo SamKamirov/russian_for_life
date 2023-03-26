@@ -83,10 +83,18 @@
     .post-single__sub_header {
         font-size: 24px;
     }
+
+    .post-single__list > li {
+        font-size: 14px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .post-single__text {
+        font-size: 16px;
+    }
+
+    .post-single__list > li {
         font-size: 16px;
     }
 }
@@ -101,6 +109,10 @@
     }
 
     .post-single__text {
+        font-size: 18px;
+    }
+
+    .post-single__list > li {
         font-size: 18px;
     }
 }
