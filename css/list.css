@@ -23,6 +23,7 @@
     min-width: 15em;
     max-width: 30em;
     margin: 10px;
+    z-index: 1;
 }
 
 .item__link:active {
@@ -36,7 +37,7 @@
 }
 
 .item__header {
-    font-size: 2vmax;
+    font-size: 24px;
     font-weight: 500;
     padding: 10px 5px;
 }

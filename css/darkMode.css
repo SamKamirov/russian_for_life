@@ -29,7 +29,8 @@
 
 
 .dark-mode .post-single__list li{
-    color: #fe6a14;
+    color: #ff782a;
+    font-weight: 700;
 }
 
 .dark-mode .post-single__text b {
