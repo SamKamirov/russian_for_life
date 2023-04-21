@@ -9,6 +9,7 @@
     --radius: 10px;
     --border: rgb(238, 238, 238);
     --dark-mode-color: #474a50;
+    --navigation-color: #ff782a;
 }
 
 * {
@@ -25,6 +26,13 @@
 a {
     text-decoration: none;
     color: black;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    background-color: transparent;
+    outline: none;
+    border: none;
 }
 
 body {
@@ -32,6 +40,14 @@ body {
     padding: 0;
     background-color: rgba(240, 240, 240, 0.875);
     height: 100vh;
+}
+
+/* body::-webkit-scrollbar {
+    display: block
+} */
+
+body::-webkit-scrollbar:hover {
+    display: block;
 }
 
 p {
@@ -53,4 +69,8 @@ b {
 img {
     width: 100%;
     height: 100%;
+}
+
+li {
+    cursor: default;
 }

@@ -4,6 +4,20 @@ var menuToggle = document.querySelector('.menu-toggle')
 
 let darkMode = false
 
+document.addEventListener('DOMContentLoaded', ()=> {
+    if (localStorage.getItem('darkMode')) {
+        body.classList.add('dark-mode')
+        modeToggle.classList.add('dark')
+        modeToggle.classList.add('fa-sun-o')
+        menuToggle.classList.add('dark')
+    }
+    else {
+        modeToggle.classList.add('light')
+        modeToggle.classList.add('fa-moon-o')
+        menuToggle.classList.add('light')
+    }
+})
+
 modeToggle.addEventListener('click', ()=> {
     console.log(this);
     body.classList.toggle('dark-mode');
@@ -22,15 +36,3 @@ modeToggle.addEventListener('click', ()=> {
         menuToggle.classList.replace('dark', 'light')
     }
 })
-
-if (localStorage.getItem('darkMode')) {
-    body.classList.add('dark-mode')
-    modeToggle.classList.add('dark')
-    modeToggle.classList.add('fa-sun-o')
-    menuToggle.classList.add('dark')
-}
-else {
-    modeToggle.classList.add('light')
-    modeToggle.classList.add('fa-moon-o')
-    menuToggle.classList.add('light')
-}

@@ -52,16 +52,9 @@
 
 @media screen and (min-width: 375px) and (max-width: 425px) {
     .post-buttons__title {
-        font-size: 12px;    
+        font-size: 14px;    
     }
 
-    .post-next, .post-previous {
-        background-size: 20%;
-        background-image: none;
-    }
-}
-
-@media screen and (min-width: 375px) and (max-width: 600px) {
     .post-next, .post-previous {
         background-image: none;
     }
@@ -69,7 +62,11 @@
 
 @media screen and (min-width: 425px) and (max-width: 768px) {
     .post-buttons__title {
-        font-size: 14px;
+        font-size: 16px;
+    }
+
+    .post-next, .post-previous {
+        background-image: none;
     }
 }
 

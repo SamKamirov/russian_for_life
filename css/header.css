@@ -21,10 +21,14 @@ header {
 }
 
 .mode-toggle {
-    width: 50px;
+    width: 55px;
     border: none;
     cursor: pointer;
     background: transparent;
+}
+
+.mode-toggle:active {
+    background-color: var(--navigation-color);
 }
 
 .fa-dark {
@@ -39,15 +43,20 @@ header {
     color: #000;
 }
 
-.header-wrapper > a {
-    display: flex;
-    align-items: center;
+.logo {
+    font-weight: 500;
 }
 
-.logo {
-    padding-left: 15px;
-    font-size: 20px;
-    font-weight: 500;
+.logo-image {
+    width: auto;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .menu-wrapper {
@@ -55,14 +64,10 @@ header {
 }
 
 .menu-toggle {
-    width: 50px;
+    width: 55px;
     background: transparent;
     border: none;
     cursor: pointer;
-}
-
-.menu-toggle:hover {
-    background-color: #fe6a14;
 }
 
 .menu.menu--closed {
@@ -87,9 +92,8 @@ header {
 }
 
 .menu__item {
-    margin: 20px 0;
+    margin-top: 20px;
     padding-left: 50px;
-    list-style-type: none;
 }
 
 .menu__header {
@@ -101,21 +105,77 @@ header {
     color: #fff;
 }
 
-.menu__list > li {
+.menu__list {
+    margin: 10px 0;
+    padding-left: 50px;
+    list-style-type: none;
+}
+
+.menu__list-item {
     padding: 5px 0;
+    user-select: none;
 }
 
 .menu__inner-list {
+    display: block;
     margin-left: 30px;
     list-style-type: none;
 }
 
-.menu__inner-list > li {
-    padding: 5px 0;
+.menu__inner-list.unactive {
+    display: none;
 }
 
-.menu__list li a:hover {
+.menu__inner-list li {
+    margin: 10px 0;
+}
+
+.menu__inner-list li a:active {
     border-bottom: 2px solid #fff;
 }
 
 
+.menu__link {
+    font-size: 18px;
+}
+
+.menu__link-wrapper {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: default;
+}
+
+.menu__link-arrow {
+    background-color: transparent;
+    border: none;
+    width: 33px;
+    cursor: pointer;
+}
+
+.hovered {
+    background-color: var(--navigation-color);
+}
+
+@media screen and (max-width: 350px) {
+    /* .logo {
+        display: none;
+    } */
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+    .mode-toggle.small {
+        font-size: 1.5em;
+    }
+
+    .menu-toggle.small {
+        font-size: 1.5em;
+    }
+}
+/* 
+@media(hover:hover) {
+    button:hover {
+        background-color: aqua;
+    }
+} */
