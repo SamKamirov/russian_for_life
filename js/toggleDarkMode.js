@@ -5,6 +5,7 @@ var menuToggle = document.querySelector('.menu-toggle')
 let darkMode = false
 
 document.addEventListener('DOMContentLoaded', ()=> {
+    console.log('its working')
     if (localStorage.getItem('darkMode')) {
         body.classList.add('dark-mode')
         modeToggle.classList.add('dark')
