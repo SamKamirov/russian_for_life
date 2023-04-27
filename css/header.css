@@ -49,7 +49,7 @@ header {
 
 .logo-image {
     width: auto;
-    height: 50px;
+    height: 40px;
     margin-left: 10px;
 }
 
@@ -130,13 +130,12 @@ header {
     margin: 10px 0;
 }
 
-.menu__inner-list li a:active {
-    border-bottom: 2px solid #fff;
-}
-
-
 .menu__link {
     font-size: 18px;
+}
+
+.menu__link:active {
+    border-bottom: 2px solid #fff;
 }
 
 .menu__link-wrapper {

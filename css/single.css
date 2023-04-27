@@ -53,9 +53,16 @@
 }
 
 .post-single__term {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-style: italic;
     font-weight: 600;
     padding: 0 15px;
+}
+
+.term_image {
+    width: 50px;
 }
 
 .post-single__list {
