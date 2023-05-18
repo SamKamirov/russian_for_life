@@ -24,13 +24,15 @@
 
 .post-next {
     /* justify-content: start; */
-    background: url(../images/1486348525-music-forward-front-next-arrow_80457.svg) 
+    /* background: url(../images/1486348525-music-forward-front-next-arrow_80457.svg)  */
+    background: 
     no-repeat right local #ffbb93;
     margin: 0 10px 5px 5px;
 }
 
 .post-previous {
-    background: url(../images/1486348526-arrow-back-backwards-repeat-previous_80453.svg) 
+    /* background: url(../images/1486348526-arrow-back-backwards-repeat-previous_80453.svg)  */
+    background:
     no-repeat left local #ffbb93;
     margin: 0 5px 5px 10px;
 }

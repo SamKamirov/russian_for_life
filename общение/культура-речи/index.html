@@ -11,9 +11,9 @@
     />
     <meta name="mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <link rel="stylesheet" href="https://samkamirov.github.io/russian_for_life/css/styles.css">
-    <link rel="stylesheet" href="https://samkamirov.github.io/russian_for_life/css/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/x-icon" href="https://samkamirov.github.io/russian_for_life/images/rus_logo@ico.ico">
+    <link rel="stylesheet" href="https://samkamirov.github.io/russian_for_lifecss/styles.css">
+    <link rel="stylesheet" href="https://samkamirov.github.io/russian_for_lifecss/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="https://samkamirov.github.io/russian_for_lifeimages/rus_logo@ico.ico">
 </head>
 <body>
     <header class="header">
@@ -23,8 +23,9 @@
             <h1 class = "logo">Реальный русский</h1>
         </a>
         <div class="menu-wrapper">
-            <button class="mode-toggle fa fa-2x small"></button>
-            <button class="menu-toggle fa fa-bars fa-2x small"></button>
+            
+            <button class="menu-button mode-toggle fa fa-2x small"></button>
+            <button class="menu-button menu-toggle fa fa-bars fa-2x small"></button>
             <div class="menu menu--closed">
                 <h2 class="menu__item menu__header">Содержание</h2>
                 <ul class="menu__list">
@@ -32,7 +33,8 @@
                         <li class="menu__list-item">
                             <h3 class="menu__link-wrapper">
                                 <a href="https://samkamirov.github.io/russian_for_life/%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B5/" class="menu__link">Общение</a>
-                                <button class="menu__link-arrow fa fa-plus small" aria-hidden="true"></button>
+                                
+                                    <i class="menu__link-arrow fa fa-plus small" aria-hidden="true"></i>
                                 
                             </h3>
                             <ul class="menu__inner-list unactive">
@@ -61,7 +63,7 @@
 </header>
     <main class = "main">
         
-    <article class = "post-single">
+    <article class="post-single">
         <img src="https://samkamirov.github.io/russian_for_life/%d0%be%d0%b1%d1%89%d0%b5%d0%bd%d0%b8%d0%b5/images/kulturaobsch.jpg" alt="post_image" class="post-single__image">
         
         <h1 class="post-single__title">Культура речи</h1>
@@ -114,15 +116,17 @@
 <p class="post-single__text">Этот принцип построен на&nbsp;соблюдении логических связей. 
 Не&nbsp;надо перескакивать с&nbsp;одной темы на&nbsp;другую; а, вступая в&nbsp;диалог, нужно сначала ответить на&nbsp;вопрос собеседника,
 прежде, чем задать ему свой. Этот&nbsp;же принцип заставляет нас на&nbsp;чьё-то &laquo;спасибо&raquo; отвечать &laquo;пожалуйста&raquo;.</p>
-<h3 class="post-single__sub_header post-single__summary">Резюме</h3>
-<p class="post-single__text">
-Есть знаменитый принцип: «Поступай с другими так, как тебе хотелось бы, чтобы поступали с тобой». 
-Но в современном мире мы уже научились признавать тот простой факт, что все люди – разные. 
-Поэтому пользоваться этим принципом не всегда удобно. Вам может нравиться слушать комплименты – 
-а кого-то другого они только смущают. А вот следующее правило выглядит более универсальным:
-общаясь, важно не попасть в неловкую ситуацию самому и не поставить в неё собеседника.
-</p> 
-<h2 class="post-single__header">Языковая норма</h2>
+<div class="post-single__summary">
+    <h3 class="post-single__summary-header">Резюме</h3>
+    <p class="post-single__summary-text">
+    Есть знаменитый принцип: «Поступай с другими так, как тебе хотелось бы, чтобы поступали с тобой». 
+    Но в современном мире мы уже научились признавать тот простой факт, что все люди – разные. 
+    Поэтому пользоваться этим принципом не всегда удобно. Вам может нравиться слушать комплименты – 
+    а кого-то другого они только смущают. А вот следующее правило выглядит более универсальным:
+    общаясь, важно не попасть в неловкую ситуацию самому и не поставить в неё собеседника.
+    </p> 
+</div>
+<h2 class="post-single__title">Языковая норма</h2>
 <p class="post-single__text">Языковая норма – фундамент речевой культуры. 
 Если вы будете делать в речи ошибки, это станет сигналом для собеседника: 
 вы не компетентны, вам не следует доверять. </p>
@@ -189,7 +193,8 @@
                 <a class="post-next" href="https://samkamirov.github.io/russian_for_life/%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B5/%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D1%81%D1%82%D0%B8%D0%BB%D0%B8-%D1%80%D0%B5%D1%87%D0%B8/">
                     <div class="post-buttons__wrapper">
                         
-                            <p class="post-buttons__title">Функциональные стили речи</p>
+                            
+                            <p class="post-buttons__title">Вперёд</p>
                     </div>
                 </a>
                 
@@ -197,7 +202,7 @@
                     <a class="post-previous" href="https://samkamirov.github.io/russian_for_life/%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D0%B5/%D0%BA%D0%BE%D0%BC%D0%BC%D1%83%D0%BD%D0%B8%D0%BA%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F-%D1%81%D0%B8%D1%82%D1%83%D0%B0%D1%86%D0%B8%D1%8F/">
                         <div class="post-buttons__wrapper">
                             
-                            <p class="post-buttons__title">Коммуникативная ситуация</p>
+                            <p class="post-buttons__title">Назад</p>
                         </div>
                     </a>
                 
@@ -207,5 +212,6 @@
     </main>
     <script defer src="https://samkamirov.github.io/russian_for_life/js/toggleDarkMode.js"></script>
     <script defer src="https://samkamirov.github.io/russian_for_life/js/toggleMenu.js"></script>
+    <script defer src="https://samkamirov.github.io/russian_for_life/js/about.js"></script>
 </body>
 </html>

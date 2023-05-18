@@ -20,8 +20,18 @@ header {
     height: 60px;
 }
 
-.mode-toggle {
+.about-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 55px;
+    height: 100%;
+}
+
+.menu-button {
+    width: 55px;
+    height: 100%;
     border: none;
     cursor: pointer;
     background: transparent;
@@ -59,100 +69,6 @@ header {
     gap: 10px;
 }
 
-.menu-wrapper {
-    display:flex;
-}
-
-.menu-toggle {
-    width: 55px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
-
-.menu.menu--closed {
-    display: none;
-}
-
-.menu {
-    position: fixed;
-    display: block;
-    top: 60px;
-    right: 0;
-    height: 100vh;
-    max-width: 25em;
-    width: 100%;
-    background-color: rgba(0,0,0, 0.5);
-    backdrop-filter: blur(25px);
-    overflow: scroll;
-}
-
-.menu::-webkit-scrollbar {
-    display: none;
-}
-
-.menu__item {
-    margin-top: 20px;
-    padding-left: 50px;
-}
-
-.menu__header {
-    font-size: 26px;
-    font-weight: 500;
-}
-
-.menu * {
-    color: #fff;
-}
-
-.menu__list {
-    margin: 10px 0;
-    padding-left: 50px;
-    list-style-type: none;
-}
-
-.menu__list-item {
-    padding: 5px 0;
-    user-select: none;
-}
-
-.menu__inner-list {
-    display: block;
-    margin-left: 30px;
-    list-style-type: none;
-}
-
-.menu__inner-list.unactive {
-    display: none;
-}
-
-.menu__inner-list li {
-    margin: 10px 0;
-}
-
-.menu__link {
-    font-size: 18px;
-}
-
-.menu__link:active {
-    border-bottom: 2px solid #fff;
-}
-
-.menu__link-wrapper {
-    width: 200px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    cursor: default;
-}
-
-.menu__link-arrow {
-    background-color: transparent;
-    border: none;
-    width: 33px;
-    cursor: pointer;
-}
-
 .hovered {
     background-color: var(--navigation-color);
 }
@@ -164,11 +80,8 @@ header {
 }
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
-    .mode-toggle.small {
-        font-size: 1.5em;
-    }
-
-    .menu-toggle.small {
+    .menu-button.small,
+    .about-icon.small {
         font-size: 1.5em;
     }
 }

@@ -1,8 +1,7 @@
 var body = document.querySelector('body')
 var modeToggle = document.querySelector('.mode-toggle')
 var menuToggle = document.querySelector('.menu-toggle')
-
-let darkMode = false
+// var about = document.querySelector('.about-icon')
 
 document.addEventListener('DOMContentLoaded', ()=> {
     console.log('its working')
@@ -11,16 +10,20 @@ document.addEventListener('DOMContentLoaded', ()=> {
         modeToggle.classList.add('dark')
         modeToggle.classList.add('fa-sun-o')
         menuToggle.classList.add('dark')
+        // about.classList.add('dark')
     }
     else {
         modeToggle.classList.add('light')
         modeToggle.classList.add('fa-moon-o')
         menuToggle.classList.add('light')
+        // about.classList.add('light')
     }
 })
 
+
 modeToggle.addEventListener('click', ()=> {
-    console.log(this);
+    // console.log(this);
+    // console.log(about)
     body.classList.toggle('dark-mode');
 
     if (body.classList.contains('dark-mode')) {
@@ -28,6 +31,7 @@ modeToggle.addEventListener('click', ()=> {
         modeToggle.classList.replace('light', 'dark')
         modeToggle.classList.replace('fa-moon-o', 'fa-sun-o')
         menuToggle.classList.replace('light', 'dark')
+        // about.classList.replace('light', 'dark')
     }
     else {
         body.classList.remove('dark-mode')
@@ -35,5 +39,6 @@ modeToggle.addEventListener('click', ()=> {
         modeToggle.classList.replace('dark', 'light')
         modeToggle.classList.replace('fa-sun-o', 'fa-moon-o')
         menuToggle.classList.replace('dark', 'light')
+        // about.classList.replace('dark', 'light')
     }
 })

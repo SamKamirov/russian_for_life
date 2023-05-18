@@ -76,5 +76,18 @@
       <description></description>
     </item>
     
+    <item>
+      <title>About</title>
+      <link>https://samkamirov.github.io/russian_for_life/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://samkamirov.github.io/russian_for_life/about/</guid>
+      <description>Реальный русский О проекте Что-то про проект в целом и его разраработку
+Dream Team Джамшед
+Я
+Наталья
+Владо</description>
+    </item>
+    
   </channel>
 </rss>

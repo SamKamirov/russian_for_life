@@ -1,0 +1,39 @@
+.about {
+    height: 100vh;
+    min-width: 15em;
+}
+
+.formatted p {
+    font-size: 14pt; 
+    font-weight: 400;
+    margin: 10px 0;
+    color: #000;
+    line-height: 1.5;
+    padding: 0 15px;
+}
+
+.dark-mode .formatted p,
+.dark-mode .formatted h1,
+.dark-mode .formatted h2,
+.dark-mode .formatted h3,
+.dark-mode .formatted img {
+    color: #fff;
+}
+
+.formatted h1 {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px 15px;
+}
+
+.formatted h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    padding: 0 15px;
+    font-weight: 500;
+}
+
+.formatted p img {
+    width: 55px;
+}

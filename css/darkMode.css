@@ -27,6 +27,11 @@
     color: #fff;
 }
 
+.dark-mode .item__header {
+    color: #fff;
+    background-color: #000;
+}
+
 
 .dark-mode .post-single__list li{
     color: #ff782a;
@@ -43,6 +48,11 @@
 }
 
 .dark-mode .post-single__title {
+    color: #fff;
+}
+
+.dark-mode .post-single__summary-header,
+.dark-mode .post-single__summary-text {
     color: #fff;
 }
 
