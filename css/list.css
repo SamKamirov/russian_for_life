@@ -15,23 +15,18 @@
     z-index: 1;
 }
 
-
 .item__content {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     min-width: 10em;
     min-height: 10em;
     max-height: 25em;
-    /* height: max(10em, 20em); */
-    background: var(--entry);
     border-radius: var(--radius);
 }
 
-
 .item:active {
     transform: scale(0.96);
-    transition: transform .1s;
+    transition: transform 0.1s;
 }
 
 .item__image {
@@ -42,7 +37,10 @@
 .item__header {
     font-size: 18px;
     font-weight: 500;
-    padding: 10px 5px;
+    padding: 10px 10px;
+    background-color: #ffffff;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
 }
 
 @media screen and (min-width: 300px) and (max-width: 768px) {

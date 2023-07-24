@@ -8,14 +8,14 @@
     --entry: rgb(255, 255, 255);
     --radius: 10px;
     --border: rgb(238, 238, 238);
-    --dark-mode-color: #474a50;
+    --dark-mode-color: #333333;
     --navigation-color: #ff782a;
 }
 
 * {
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    font-size: 14pt; 
+    font-size: 14pt;
     font-weight: 400;
     color: #000;
     line-height: 1.5;
@@ -38,7 +38,7 @@ button {
 body {
     margin: 0;
     padding: 0;
-    background-color: rgba(240, 240, 240, 0.875);
+    background-color: #cccccc;
     height: 100vh;
 }
 

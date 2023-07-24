@@ -2,14 +2,16 @@
     display: flex;
     max-width: 45em;
     width: 100%;
+    margin: 15px 0 20px 0;
 }
 
 .post-buttons {
     display: flex;
     justify-content: space-between;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     max-width: 45em;
     width: 100%;
+    padding: 0 15px;
 }
 
 .post-previous,
@@ -25,39 +27,43 @@
 .post-next {
     /* justify-content: start; */
     /* background: url(../images/1486348525-music-forward-front-next-arrow_80457.svg)  */
-    background: 
-    no-repeat right local #ffbb93;
+    background: no-repeat right local #ffbb93;
     margin: 0 10px 5px 5px;
 }
 
 .post-previous {
     /* background: url(../images/1486348526-arrow-back-backwards-repeat-previous_80453.svg)  */
-    background:
-    no-repeat left local #ffbb93;
+    background: no-repeat left local #ffbb93;
     margin: 0 5px 5px 10px;
 }
 
-.post-buttons__wrapper {
+.post-buttons__title {
+    font-weight: 600;
+}
+
+/* .post-buttons__wrapper {
     display: flex;
-    /* position: sticky; */
-    overflow: hidden;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    border: 1px solid black;
+} */
+
+.dark-mode .nav-links-title--previous {
+    font-weight: 700;
 }
 
-.post-buttons__next,
-.post-buttons__previous {
-    margin: 0;
-    color: #000;
+.dark-mode .nav-links-title--next {
+    font-weight: 700;
 }
 
 @media screen and (min-width: 375px) and (max-width: 425px) {
     .post-buttons__title {
-        font-size: 14px;    
+        font-size: 14px;
     }
 
-    .post-next, .post-previous {
+    .post-next,
+    .post-previous {
         background-image: none;
     }
 }
@@ -67,15 +73,14 @@
         font-size: 16px;
     }
 
-    .post-next, .post-previous {
+    .post-next,
+    .post-previous {
         background-image: none;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    
 }
 
 @media screen and (min-width: 1024px) {
-    
 }

@@ -4,7 +4,7 @@
 }
 
 .dark-mode .logo {
-    color:#fff;
+    color: #fff;
 }
 
 .dark-mode .header-wrapper {
@@ -16,25 +16,27 @@
 }
 
 .dark-mode .post-single__text {
-    color: #fff;
+    color: #ffffff;
 }
 
 .dark-mode .post-single__header {
-    color: #fff;
+    color: #ffffff;
 }
 
 .dark-mode .post-single__sub_header {
-    color: #fff;
+    color: #ffffff;
 }
 
 .dark-mode .item__header {
-    /* color: #fff; */
-    color: #000;
-    /* background-color: #000; */
+    color: #ffffff;
+    background-color: #666666;
 }
 
+.dark-mode .about-icon {
+    color: #ffffff;
+}
 
-.dark-mode .post-single__list li{
+.dark-mode .post-single__list li {
     color: #ff782a;
     font-weight: 700;
 }
@@ -49,12 +51,12 @@
 }
 
 .dark-mode .post-single__title {
-    color: #fff;
+    color: #ffffff;
 }
 
 .dark-mode .post-single__summary-header,
 .dark-mode .post-single__summary-text {
-    color: #fff;
+    color: #ffffff;
 }
 
 .dark-mode .post-single__term {
@@ -66,7 +68,27 @@
     background-color: #ff995e;
 }
 
-.dark-mode .post-buttons__next, 
+.dark-mode .post-buttons__next,
 .dark-mode .post-buttons__previous {
-    color:#000;
+    color: #000;
+}
+
+.dark-mode .formatted p,
+.dark-mode .formatted h1,
+.dark-mode .formatted h2 {
+    color: #ffffff;
+}
+
+.dark-mode .formatted strong {
+    color: #ff6600;
+}
+
+.dark-mode .nav-links-label--previous p,
+.dark-mode .nav-links-title--previous a {
+    color: #ffffff;
+}
+
+.dark-mode .nav-links-label--next p,
+.dark-mode .nav-links-title--next a {
+    color: #ffffff;
 }
