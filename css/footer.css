@@ -8,10 +8,24 @@
 .post-buttons {
     display: flex;
     justify-content: space-between;
-    /* flex-direction: row-reverse; */
     max-width: 45em;
     width: 100%;
     padding: 0 15px;
+}
+
+
+.post-buttons__prev {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: start;
+}
+
+.post-buttons__next {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: end;
 }
 
 .post-previous,

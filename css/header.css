@@ -16,7 +16,7 @@ header {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
-    align-self: center;
+    align-items: center;
     height: 60px;
 }
 
@@ -113,6 +113,11 @@ header {
     background-color: var(--navigation-color);
 }
 
+.clone .post-single__title {
+    font-weight: 700;
+    padding: 0 5px;    
+}
+
 @media screen and (max-width: 350px) {
     /* .logo {
         display: none;
@@ -123,6 +128,21 @@ header {
     .menu-button.small,
     .about-icon.small {
         font-size: 1.5em;
+    }
+
+    .logo {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .clone .post-single__title {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .clone .post-single__title {
+        font-size: 16px;
     }
 }
 /* 
