@@ -1,27 +1,42 @@
-window.addEventListener('load', () => {
-    if (localStorage.getItem('location') === document.location.pathname) {
-        localStorage.setItem('last-visit', Date.now())
-        return
-    }
-    
-    if (Number(Date.now()) - Number(localStorage.getItem('last-visit')) > 1200000)
-    {
-        document.querySelector('.notification-wrapper').classList.add('active')
-        localStorage.setItem('last-visit', Date.now());
-    }
-    
-    const notification = document.getElementById('notification-nav');
-    const link = document.createElement('a');
-    link.href = localStorage.getItem('location');
-    link.textContent = 'Да';
-    notification.appendChild(link);
-    
-    localStorage.setItem('last-visit', Date.now())
-    localStorage.setItem('location', document.location.pathname);
+const notification = document.querySelector('.notification-wrapper');
+const DEFAULT_LAST_VISIT = 1200000;
+// const DEFAULT_LAST_VISIT = 2;
+const declineBtn = document.querySelector('.button__decline');
 
-    document.querySelector('.notification-nav-button__decline').addEventListener('click', ()=> {
-        localStorage.setItem('last-visit', Date.now());
-        document.querySelector('.notification-wrapper').classList.remove('active')
-    })
-});
+const checkLocation = () => {
+    if (localStorage.getItem('location') === document.location.pathname) {
+        localStorage.setItem('last-visit', String(Date.now()));
+    }
+};
+
+const overrideLastVisitTime = () => {
+    if (Number(Date.now()) - Number(localStorage.getItem('last-visit')) > DEFAULT_LAST_VISIT)
+    {
+        localStorage.setItem('last-visit', String(Date.now()));
+        notification.classList.add('active');
+    }
+};
+const updateLocationAndTime = () => {
+    localStorage.setItem('last-visit', String(Date.now()));
+    localStorage.setItem('location', document.location.pathname);
+}
+const hideModal = () => {
+    localStorage.setItem('last-visit', String(Date.now()));
+    document.querySelector('.notification-wrapper').classList.remove('active')
+}
+
+const onDeclineBtnClick = () => hideModal();
+const onWindowLoad = () => {
+    checkLocation();
+    overrideLastVisitTime();
+    updateLocationAndTime();
+
+    declineBtn.addEventListener('click', onDeclineBtnClick)
+};
+
+const saveCurrentState = () => {
+    window.addEventListener('load', onWindowLoad)
+};
+
+export {saveCurrentState};
 

@@ -91,3 +91,8 @@ li {
 .active {
     display: flex;
 }
+
+.modal-open {
+    height: 100vh;
+    overflow: hidden;
+}
