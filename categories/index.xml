@@ -5,6 +5,7 @@
     <link>https://samkamirov.github.io/russian_for_life/categories/</link>
     <description>Recent content in Categories on </description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://samkamirov.github.io/russian_for_life/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <atom:link href="https://samkamirov.github.io/russian_for_life/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

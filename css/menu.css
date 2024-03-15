@@ -63,7 +63,11 @@
 }
 
 .menu__inner-list li {
-    margin: 10px 0;
+    margin: 10px auto 10px 0;
+}
+
+.menu__inner-list li:hover span{
+    border-bottom: 1px solid #ffffff;
 }
 
 .menu__link {
@@ -88,3 +92,4 @@
     /* width: 33px; */
     cursor: pointer;
 }
+
