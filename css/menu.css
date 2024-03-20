@@ -48,7 +48,6 @@
 }
 
 .menu__list-item {
-    padding: 5px 10px 5px 0;
     user-select: none;
 }
 
@@ -67,15 +66,20 @@
 }
 
 .menu__inner-list li:hover span{
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #ff6600;
 }
+
 
 .menu__link {
     font-size: 18px;
 }
 
+.menu__link:hover {
+    border-bottom: 1px solid #ff6600;
+} 
+
 .menu__link:active {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #ff782a;
 }
 
 .menu__link-wrapper {
@@ -84,6 +88,7 @@
     align-items: center;
     gap: 20px;
     cursor: default;
+    padding: 5px;
 }
 
 .menu__link-arrow {

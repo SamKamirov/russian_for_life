@@ -7,7 +7,6 @@ const closeGuideWindow = () => {
     popup.classList.add('popup-hidden');
     document.body.classList.remove('modal-open');
     document.removeEventListener('keydown', onDocumentKeyDown);
-    // document.removeEventListener('click', onDocumentClick);
 };
 
 const onCloseBtnClick = () => closeGuideWindow();
@@ -23,17 +22,12 @@ const openGuideWindow = () => {
     document.body.classList.add('modal-open');
     closeGuideWindowBtn.addEventListener('click', onCloseBtnClick);
     document.addEventListener('keydown', onDocumentKeyDown);
-    // document.addEventListener('click', onDocumentClick);
 };
 
 const onOpenGuideWindowBtnClick = () => openGuideWindow();
 
-const isGuideOpen = (evt) => !popup.classList.contains('popup-hidden') && !popupContent.contains(evt.target);
+const isGuideOpen = () => !popup.classList.contains('popup-hidden');
 
-const initGuideWinListeners = () => {
-    openGuideWindowBtn.addEventListener('click', onOpenGuideWindowBtnClick);
-};
+const initGuideWinListeners = () => openGuideWindowBtn.addEventListener('click', onOpenGuideWindowBtnClick);
 
-// const onDocumentClick = (evt) => ;
-
-export { initGuideWinListeners };
+export { initGuideWinListeners, isGuideOpen };

@@ -30,43 +30,8 @@ header {
     cursor: pointer;
 }
 
-.popup {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(84, 84, 84, 0.5);
-}
-
-.popup .popup-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-width: 300px;
-    max-width: 800px;
-    max-height: 500px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.popup-hidden {
-    display: none;
-}
-
-.popup-close-btn {
-    padding: 10px;
-    border-radius: 10px;
-    align-self: flex-end;
-}
-
-.popup-close-btn:hover {
-    background-color: #535353;
+.guide:active {
+    background-color: var(--navigation-color);
 }
 
 .menu-button {

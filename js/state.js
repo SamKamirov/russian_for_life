@@ -1,42 +1,42 @@
-const notification = document.querySelector('.notification-wrapper');
 const DEFAULT_LAST_VISIT = 1200000;
-// const DEFAULT_LAST_VISIT = 2;
+const notification = document.querySelector('.notification-wrapper');
 const declineBtn = document.querySelector('.button__decline');
+const acceptBtn = document.querySelector('.button__accept');
 
-const checkLocation = () => {
-    if (localStorage.getItem('location') === document.location.pathname) {
-        localStorage.setItem('last-visit', String(Date.now()));
+const setLocation = () => localStorage.setItem('location', document.location.pathname);
+const updateLocation = () => localStorage.getItem('location') === document.location.pathname && setLastVisitTime();
+const setLastVisitTime = () => localStorage.setItem('last-visit', Date.now());
+const showNotification = () => notification.classList.remove('hidden');
+const hideNotification = () => notification.classList.add('hidden');
+
+const checkTimeDifference = () => {
+    if (Number(Date.now()) - Number(localStorage.getItem('last-visit')) > DEFAULT_LAST_VISIT) {
+        setLastVisitTime();
+        showNotification();
+        acceptBtn.href = localStorage.getItem('location');
     }
 };
 
-const overrideLastVisitTime = () => {
-    if (Number(Date.now()) - Number(localStorage.getItem('last-visit')) > DEFAULT_LAST_VISIT)
-    {
-        localStorage.setItem('last-visit', String(Date.now()));
-        notification.classList.add('active');
-    }
-};
 const updateLocationAndTime = () => {
-    localStorage.setItem('last-visit', String(Date.now()));
-    localStorage.setItem('location', document.location.pathname);
-}
-const hideModal = () => {
-    localStorage.setItem('last-visit', String(Date.now()));
-    document.querySelector('.notification-wrapper').classList.remove('active')
-}
+    setLocation();
+    setLastVisitTime();
+};
 
-const onDeclineBtnClick = () => hideModal();
+const onDeclineBtnClick = () => {
+    hideNotification();
+    setLocation();
+    setLastVisitTime();
+};
+
 const onWindowLoad = () => {
-    checkLocation();
-    overrideLastVisitTime();
+    updateLocation();
+    checkTimeDifference();
     updateLocationAndTime();
 
-    declineBtn.addEventListener('click', onDeclineBtnClick)
+    declineBtn.addEventListener('click', onDeclineBtnClick);
 };
 
-const saveCurrentState = () => {
-    window.addEventListener('load', onWindowLoad)
-};
+const saveCurrentState = () => window.addEventListener('load', onWindowLoad);
 
-export {saveCurrentState};
+export { saveCurrentState };
 
