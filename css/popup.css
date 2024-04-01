@@ -37,3 +37,7 @@
 .popup-close-btn:hover {
     cursor: pointer;
 }
+
+.popup-close-btn:active {
+    cursor: pointer;
+}

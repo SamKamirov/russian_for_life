@@ -19,6 +19,7 @@ const onDocumentClick = (e) => {
 };
 
 const toggleMenu = () => {
+    body.classList.toggle('modal-open')
     dropdownMenu.classList.toggle('menu--closed');
     headerMenuToggle.classList.toggle('hovered');
     document.addEventListener('click', onDocumentClick);

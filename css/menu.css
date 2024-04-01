@@ -11,8 +11,10 @@
 }
 
 .menu {
-    position: fixed;
-    display: block;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    
     top: 60px;
     right: 0;
     height: 100vh;
@@ -63,12 +65,8 @@
 
 .menu__inner-list li {
     margin: 10px auto 10px 0;
+    padding: 0px 10px;
 }
-
-.menu__inner-list li:hover span{
-    border-bottom: 1px solid #ff6600;
-}
-
 
 .menu__link {
     font-size: 18px;
@@ -83,12 +81,12 @@
 }
 
 .menu__link-wrapper {
-    width: 200px;
     display: flex;
     align-items: center;
-    gap: 20px;
+    justify-content: space-between;
     cursor: default;
-    padding: 5px;
+    padding: 5px 30px 5px 5px;
+    gap: 20px;
 }
 
 .menu__link-arrow {

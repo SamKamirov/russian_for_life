@@ -26,8 +26,25 @@
     border-bottom: 1px solid #ff6600;
 }
 
+.dark-mode .formatted .major-header {
+    color: rgb(255, 255, 255)
+}
+
+.dark-mode .formatted .advice-header {
+    color: #ffffff;
+}
+
+.dark-mode .clone .post-single__title {
+    color: #ffffff;
+}
+
+.dark-mode table th,
+.dark-mode table td {
+    color: #ffffff;
+    border: 1px solid #ff6600;
+}
+
 .dark-mode .formatted h3 {
-    font-size: 16pt;
     font-weight: 500;
     color: #ff6600;
 }
