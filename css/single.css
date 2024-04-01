@@ -60,19 +60,19 @@
     color: rgba(255, 120, 42, 1);
 }
 
-.formatted ul {
+.formatted ul, ol {
     margin: 10px 15px;
 }
 
 .formatted li {
     margin: 0 15px;
-    font-size: 14pt;
+    font-size: 15pt;
 }
 
 .formatted ol {
-    margin: 0 15px;
-    padding: 0;
+    padding: 0px 5px;
 }
+
 .main {
     display: flex;
     flex-direction: column;
@@ -104,7 +104,7 @@ blockquote {
 }
 
 .formatted .post-single__block {
-    margin: 0 15px;
+    margin: 10px 15px;
     border-radius: 5px;
 }
 
@@ -120,9 +120,22 @@ blockquote {
     border: 1px solid rgba(255, 0, 0, 1);
 }
 
+.formatted .question {
+    border: 1px solid rgba(0, 109, 252, 1);
+}
+
 .formatted .summary-header {
     background-color: rgba(255, 120, 42, 0.3);
 }
+
+.formatted .example {
+    border: 1px solid #136207;
+}
+
+.formatted .example-header {
+    background-color: rgba(102, 204, 0, 0.3);
+}
+
 
 .formatted .advice-header {
     background-color: rgba(51, 204, 102, 0.3);
@@ -132,9 +145,13 @@ blockquote {
     background-color: rgba(204, 0, 0, 0.3);
 }
 
+.formatted .question-header {
+    background-color: rgb(102, 153, 255);
+}
+
 .formatted .post-single__block-header {
     padding: 5px 10px;
-    font-size: 14pt;
+    font-size: 15pt;
     font-weight: 700;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -142,7 +159,7 @@ blockquote {
 
 .formatted .post-single__block-text {
     padding-left: 10px;
-    font-size: 14pt;
+    font-size: 15pt;
     font-weight: 400;
     color: #000;
     line-height: 1.5;

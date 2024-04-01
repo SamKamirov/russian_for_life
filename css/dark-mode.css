@@ -11,36 +11,30 @@
 .dark-mode .post-single__header,
 .dark-mode .post-single__sub_header,
 .dark-mode .item__header,
-.dark-mode .about-icon
-.dark-mode .formatted ul li {
+.dark-mode .about-icon,
+.dark-mode .formatted .advice-header,
+.dark-mode .formatted .major-header,
+.dark-mode .formatted .question-header,
+.dark-mode .formatted .example-header,
+.dark-mode .formatted .summary-header,
+.dark-mode .clone .post-single__title,
+.dark-mode table th,
+.dark-mode table td,
+.dark-mode .formatted ul li,
+.dark-mode .formatted ol li,
+.dark-mode .formatted del {
     color: #ffffff;
 }
 
 .dark-mode .nav-links-label--previous p,
-.dark-mode .nav-links-label--next p {
-    border-bottom: 1px solid #ff6600;
-}
-
+.dark-mode .nav-links-label--next p,
 .dark-mode .nav-links-title--previous a:hover,
 .dark-mode .nav-links-title--next a:hover {
     border-bottom: 1px solid #ff6600;
 }
 
-.dark-mode .formatted .major-header {
-    color: rgb(255, 255, 255)
-}
-
-.dark-mode .formatted .advice-header {
-    color: #ffffff;
-}
-
-.dark-mode .clone .post-single__title {
-    color: #ffffff;
-}
-
 .dark-mode table th,
 .dark-mode table td {
-    color: #ffffff;
     border: 1px solid #ff6600;
 }
 
@@ -103,11 +97,6 @@
 .dark-mode .formatted .post-single__term {
     color: #ff782a;
     font-weight: 400;
-}
-
-.dark-mode .post-single__summary-header,
-.dark-mode .post-single__summary-text {
-    color: #ffffff;
 }
 
 .dark-mode .post-next,
