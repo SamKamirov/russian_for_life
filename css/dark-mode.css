@@ -23,89 +23,93 @@
 .dark-mode .formatted ul li,
 .dark-mode .formatted ol li,
 .dark-mode .formatted del {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .dark-mode .nav-links-label--previous p,
 .dark-mode .nav-links-label--next p,
 .dark-mode .nav-links-title--previous a:hover,
 .dark-mode .nav-links-title--next a:hover {
-    border-bottom: 1px solid #ff6600;
+  border-bottom: 1px solid #ff6600;
 }
 
 .dark-mode table th,
 .dark-mode table td {
-    border: 1px solid #ff6600;
+  border: 1px solid #ff6600;
 }
 
 .dark-mode .formatted h3 {
-    font-weight: 500;
-    color: #ff6600;
+  font-weight: 500;
+  color: #ff6600;
 }
 
 .dark-mode .formatted .post-single__summary-header {
-    padding: 5px 10px;
-    font-size: 14pt;
-    font-weight: 700;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    color: #ffffff;
+  padding: 5px 10px;
+  font-size: 14pt;
+  font-weight: 700;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #ffffff;
 }
 
 .dark-mode .formatted strong {
-    color: #ff6600;
+  color: #ff6600;
 }
 
 .dark-mode {
-    background-color: var(--dark-mode-color);
-    color: #fff;
+  background-color: var(--dark-mode-color);
+  color: #fff;
 }
 
 .dark-mode .header-wrapper {
-    background-color: #000;
+  background-color: #000;
 }
 
 .dark-mode .main {
-    background-color: var(--dark-mode-color);
+  background-color: var(--dark-mode-color);
 }
 
 .dark-mode .item__header {
-    background-color: #666666;
+  background-color: #666666;
 }
 
 .dark-mode .post-single__list li {
-    color: #ff782a;
-    font-weight: 700;
+  color: #ff782a;
+  font-weight: 700;
 }
 
 .dark-mode .post-single__text b {
-    color: #ff782a;
+  color: #ff782a;
 }
 
 .dark-mode .post-single__term a {
-    color: #ff782a;
-    font-weight: 400;
+  color: #ff782a;
+  font-weight: 400;
 }
 .dark-mode .post-single__term > p {
-    color: #ff782a;
+  color: #ff782a;
 }
 
 .dark-mode .post-single__term b {
-    color: #ff782a;
+  color: #ff782a;
 }
 
 .dark-mode .formatted .post-single__term {
-    color: #ff782a;
-    font-weight: 400;
+  color: #ff782a;
+  font-weight: 400;
+}
+
+.dark-mode .formatted .term__content {
+  font-weight: 700;
+  color: #ff782a;
 }
 
 .dark-mode .post-next,
 .dark-mode .post-previous {
-    background-color: #ff995e;
+  background-color: #ff995e;
 }
 
 .dark-mode .post-buttons__next,
 .dark-mode .post-buttons__previous {
-    color: #000;
+  color: #000;
 }
-
