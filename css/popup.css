@@ -9,6 +9,7 @@
   height: 100%;
   background-color: rgba(84, 84, 84, 0.5);
   z-index: 5;
+  overflow-y: scroll;
 }
 
 .popup .popup-content {
@@ -18,10 +19,12 @@
   width: 100%;
   min-width: 300px;
   max-width: 800px;
+  height: 90%;
   margin: 0 auto;
   background-color: #ffffff;
   border-radius: 10px;
   text-align: center;
+  overflow: scroll;
 }
 
 .popup-title {
@@ -30,6 +33,7 @@
 }
 
 .popup-text {
+  display: flex;
   width: 600px;
   text-align: start;
 }
@@ -50,5 +54,22 @@
 
 .popup-close-btn:active {
   cursor: pointer;
+}
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  .popup .popup-content {
+    margin: 0 10px;
+  }
+  .popup-text {
+    width: 100%;
+    font-size: 12pt;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 1024px) {
 }
 

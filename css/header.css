@@ -1,114 +1,115 @@
 @media screen and (min-width: 300px) and (max-width: 768px) {
-    /* .logo {
+  /* .logo {
         font-size: 14pt;
     } */
 }
 
 header {
-    position: fixed;
-    width: 100%;
-    height: 60px;
-    top: 0;
-    z-index: 2;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  z-index: 2;
 }
 
 .header-wrapper {
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
 }
 
 .guide {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 55px;
-    height: 100%;
-    cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 100%;
+  cursor: pointer;
 }
 
 .guide:active {
-    background-color: var(--navigation-color);
+  background-color: var(--navigation-color);
 }
 
 .menu-button {
-    width: 55px;
-    height: 100%;
-    border: none;
-    cursor: pointer;
-    background: transparent;
+  width: 55px;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  background: transparent;
 }
 
 .mode-toggle:active {
-    background-color: var(--navigation-color);
+  background-color: var(--navigation-color);
 }
 
 .fa-dark {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .dark {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .light {
-    color: #000000;
+  color: #000000;
 }
 
 .logo {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .logo-image {
-    width: auto;
-    height: 40px;
-    margin-left: 10px;
+  width: auto;
+  height: 40px;
+  margin-left: 10px;
 }
 
 .logo-link {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .hovered {
-    background-color: var(--navigation-color);
+  background-color: var(--navigation-color);
 }
 
 .clone .post-single__title {
-    font-weight: 700;
-    padding: 0 5px;    
+  font-weight: 700;
+  padding: 0 5px;
 }
 
 @media screen and (max-width: 350px) {
-    /* .logo {
+  /* .logo {
         display: none;
     } */
 }
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
-    .menu-button.small,
-    .about-icon.small {
-        font-size: 1.5em;
-    }
+  .menu-button.small,
+  .about-icon.small {
+    font-size: 1.5em;
+  }
 
-    .logo {
-        font-size: 15px;
-        font-weight: 600;
-    }
+  .logo {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
 
-    .clone .post-single__title {
-        font-size: 12px;
-    }
+  .clone .post-single__title {
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .clone .post-single__title {
-        font-size: 16px;
-    }
+  .clone .post-single__title {
+    font-size: 16px;
+  }
 }
 /* 
 @media(hover:hover) {
