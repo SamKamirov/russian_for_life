@@ -1,0 +1,22 @@
+<footer class="footer">
+    <div class="post-buttons">
+            {{ with .PrevInSection }}
+            <a class="post-next" href="{{ .Permalink }}">
+                <div class="post-buttons__wrapper">
+                    <!-- <p class="post-buttons__next">Вперёд</p> -->
+                        <!-- <p class="post-buttons__title">{{.Title}}</p> -->
+                        <p class="post-buttons__title">Вперёд</p>
+                </div>
+            </a>
+            {{end}}
+            {{ with .NextInSection }}
+                <a class="post-previous" href="{{ .Permalink }}">
+                    <div class="post-buttons__wrapper">
+                        <!-- <p class="post-buttons__previous">Назад</p> -->
+                        <!-- <p class="post-buttons__title">{{.Title}}</p> -->
+                        <p class="post-buttons__previous">Назад</p>
+                    </div>
+                </a>
+            {{end}}
+        </div>
+</footer>

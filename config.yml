@@ -1,0 +1,38 @@
+baseURL: "https://samkamirov.github.io/russian_for_life"
+# baseURL: "http://localhost:1313/russian_for_life"
+
+languageCode: en-us
+
+markup:
+  goldmark:
+    extensions:
+      definitionList: true
+      footnote: true
+      linkify: true
+      linkifyProtocol: https
+      strikethrough: true
+      table: true
+      taskList: true
+      typographer: true
+    parser:
+      attribute:
+        block: false
+        title: true
+      autoHeadingID: true
+      autoHeadingIDType: github
+      wrapStandAloneImageWithinParagraph: true
+    renderer:
+      hardWraps: false
+      unsafe: true
+      xhtml: false
+
+params:
+  cover:
+    linkFullImages: true
+
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  title: Реальный русский
+  formatString: "https://samkamirov.github.io/russian_for_life/{url}/{title}"
+  base: russian_for_life
+

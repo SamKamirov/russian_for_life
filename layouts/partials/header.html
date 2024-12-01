@@ -1,0 +1,18 @@
+<header class="header">
+    <div class="header-wrapper">
+        <a href="{{ .Site.BaseURL }}" class="logo-link">
+            <img src="{{ .Site.BaseURL }}/images/rus_logo@2.svg" alt="logo-image" class="logo-image" />
+            <h1 class="logo">{{ .Site.Params.title }}</h1>
+        </a>
+        <div class="clone"></div>
+        <div class="menu-wrapper">
+            <button class="guide">
+                <i class="about-icon fa fa-question-circle-o fa-2x small"></i>
+            </button>
+            {{ partialCached "guide.html" . }}
+            <button class="menu-button mode-toggle fa fa-2x small"></button>
+            <button class="menu-button menu-toggle fa fa-bars fa-2x small"></button>
+            {{ partialCached "menu.html" .}}
+        </div>
+    </div>
+</header>

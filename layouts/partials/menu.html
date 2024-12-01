@@ -1,0 +1,36 @@
+<div class="menu menu--closed">
+    <h2 class="menu__item menu__header">Содержание</h2>
+    <ul class="menu__list">
+        {{ range .Site.Sections }}
+        <li class="menu__list-item">
+            <h3 class="menu__link-wrapper">
+                <span>
+                    <a href="{{ .Permalink }}" class="menu__link">{{ .Title }}</a>
+                </span>
+                <!-- <button class="menu__link-arrow"> -->
+                <i class="menu__link-arrow fa fa-plus small" aria-hidden="true"></i>
+                <!-- </button> -->
+            </h3>
+            <ul class="menu__inner-list unactive">
+                {{ range .RegularPages }}
+                <li>
+                    <span>
+                        <a href="{{ .Permalink }}" class="menu__link">{{ .Title }}</a>
+                    </span>
+                </li>
+                {{ end }}
+            </ul>
+        </li>
+        {{end}}
+        <li class="menu__list-item">
+            <h3 class="menu__link-wrapper">
+                <a href="{{ .Site.BaseURL }}/about" class="menu__link">О проекте</a>
+            </h3>
+        </li>
+        <li class="menu__list-item">
+            <h3 class="menu__link-wrapper">
+                <a href="{{ .Site.BaseURL}}/terms" class="menu__link">Термины</a>
+            </h3>
+        </li>
+    </ul>
+</div>

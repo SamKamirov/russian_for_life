@@ -1,0 +1,25 @@
+{{ with .Parent }}
+<p class="post-single__term term-list-item">
+  <a href="../../terms#{{.Get 0}}">
+    <img
+      src="../../images/term4.png"
+      alt="term"
+      class="term_image"
+      loading="lazy"
+    />
+    <span class="term__content">{{.Inner | markdownify}}</span>
+  </a>
+</p>
+{{else}}
+<p class="post-single__term">
+  <a href="../../terms#{{.Get 0}}">
+    <img
+      src="../../images/term4.png"
+      alt="term"
+      class="term_image"
+      loading="lazy"
+    />
+    <span class="term__content">{{.Inner | markdownify}}</span>
+  </a>
+</p>
+{{ end }}

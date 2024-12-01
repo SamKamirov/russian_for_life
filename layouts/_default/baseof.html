@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ .Site.Params.title }}</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, viewport-fit=cover, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="preload"
+      href="{{ .Site.BaseURL }}/css/fonts.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ .Site.BaseURL }}/css/styles.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ .Site.BaseURL }}/css/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{ .Site.BaseURL }}/images/rus_logo@ico.ico"
+    />
+  </head>
+  <body>
+    {{ partialCached "header.html" . }} {{ partialCached "notification.html" .
+    }}
+    <main class="main">{{ block "main" . }} {{ end }}</main>
+    <script defer type="module" src="{{ .Site.BaseURL }}/js/main.js"></script>
+  </body>
+</html>

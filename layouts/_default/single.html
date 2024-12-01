@@ -1,0 +1,48 @@
+{{ define "main" }}
+<article class="formatted">
+  {{ if not .Content }}
+  <div class="no-content">
+    <p>Сорян, контента пока неть.</p>
+  </div>
+  {{ else }}
+  <img
+    src="{{ .Site.BaseURL }}/{{ .Params.cascade.banner }}"
+    alt="post_image"
+    class="post-single__image"
+    loading="lazy"
+  />
+  <h1 class="post-single__title">{{ .Title }}</h1>
+  {{ if .Params.Subtitle }}
+  <h2 class="post-single__subtitle">{{ .Params.Subtitle }}</h2>
+  {{end}} {{ .Content }} {{ end }}
+</article>
+<footer class="footer">
+  <div class="post-buttons">
+    {{ with .NextInSection }}
+    <div class="post-buttons__wrapper post-buttons__prev">
+      {{ if .Title}}
+      <span class="nav-links nav-links-label--previous">
+        <p>Предыдущая статья</p>
+      </span>
+      <span class="nav-links nav-links-title--previous">
+        <a class="post-buttons__title" href="{{ .Permalink }}">
+          {{ .Title }}
+        </a>
+      </span>
+      {{ end }}
+    </div>
+    {{ end }} {{ with .PrevInSection }}
+    <div class="post-buttons__wrapper post-buttons__next">
+      {{ if .Title }}
+      <span class="nav-links nav-links-label--next">
+        <p>Следующая статья</p>
+      </span>
+      <span class="nav-links nav-links-title--next">
+        <a class="post-buttons__title" href="{{ .Permalink }}"> {{.Title}} </a>
+      </span>
+      {{ end }}
+    </div>
+    {{end}}
+  </div>
+</footer>
+{{ end }}

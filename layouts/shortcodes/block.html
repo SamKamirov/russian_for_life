@@ -1,0 +1,19 @@
+<div class="post-single__block {{ .Get 0}}">
+    {{ $title := .Get 0}}
+    <h3 class="post-single__block-header {{ .Get 0}}-header">
+        {{ if eq $title "major"}}
+            Главное
+        {{else if eq $title "point"}}
+            Скажем прямо
+        {{else if eq $title "summary"}}
+            Резюме
+        {{else if eq $title "question"}}
+            Вопрос
+        {{else if eq $title "example"}}
+            Пример
+        {{else}}
+            Совет
+        {{end}}
+    </h3>
+    <p class="post-single__block-text">{{.Inner | markdownify}}</p>
+</div>
